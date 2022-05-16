@@ -1,0 +1,63 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color:bisque;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 70vh;
+    margin-top: 2em;
+}
+.wraper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.navigation{
+    margin: 1rem;
+    display: flex;
+}
+
+.textSlides{
+    margin: 1rem;
+}
+
+.slides{
+height: 20em;
+}
+.btn{
+    height: 8px;
+    width: 8px;
+    cursor: pointer;
+    background-color: red;
+    opacity: 0.5;
+}
+
+input[name="radio"]{
+    position: absolute;
+    visibility: hidden;
+}
+.navigation .btn {
+    height: 3rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: inherit;
+    flex-direction: row;
+}
+.btn > .circle {
+    z-index: 3;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #1983e6;
+    border: 0.1rem solid #1983e6;
+    border-radius: 50%;
+    transition: background-color 1s, border 1s;
+}

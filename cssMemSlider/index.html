@@ -4,52 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Slieder</title>
 </head>
 <body>
     <div class="container">
-         <input type="radio" name="radio" id="r1" checked>
-         <input type="radio" name="radio" id="r2">
-         <input type="radio" name="radio" id="r3">
-         <input type="radio" name="radio" id="r4">
-         <input type="radio" name="radio" id="r5">
         <div class="slides">
             <div class="slide"><img src="" alt=""></div>
             <div class="slide"><img src="" alt=""></div>
             <div class="slide"><img src="" alt=""></div>
             <div class="slide"><img src="" alt=""></div>
         </div>
-        <div class="textSlides">
-            <div class="text">
-                <p>Ну давай, расскажи мне про мемы</p>
+        <div class="wraper">
+            <div class="textSlides">
+                <div class="text">
+                    <p>Ну давай, расскажи мне про мемы</p>
+                </div>
+                <div class="text">
+                    <p>Когда твой образ жизни на самом деле называется карантин...</p>
+                </div>
+                <div class="text">
+                    <p>Еще на один год ближе к пенсии</p>
+                </div>
+                <div class="text">
+                    <p>Когда свернул не туда ...</p>
+                </div>
             </div>
-            <div class="text">
-                <p>Когда ты узнаешь что твой образ жизни на самом деле называется карантин...</p>
-            </div>
-            <div class="text">
-                <p>Еще на один год ближе к пенсии</p>
-            </div>
-            <div class="text">
-                <p>Когда свернул не туда ...</p>
-            </div>
+            <input type="radio" name="radio" id="r1" checked>
+                <input type="radio" name="radio" id="r2">
+                <input type="radio" name="radio" id="r3">
+                <input type="radio" name="radio" id="r4">
+                <input type="radio" name="radio" id="r5">
+            <div class="navigation">
+               
+                <label for="r1" class="btn" id="btn1">
+                    <span class="circle"></span>
+                  </label>
+                  <label for="r2" class="btn" id="btn2">
+                    <span class="circle"></span>
+                  </label>
+                  <label for="r3" class="btn" id="btn3">
+                    <span class="circle"></span>
+                  </label>
+                  <label for="r4" class="btn" id="btn4">
+                    <span class="circle"></span>
+                  </label>
+                  <label for="r5" class="btn" id="btn5">
+                    <span class="circle"></span>
+                  </label>
+                
+              </div>
+             
         </div>
-        <div class="navigation">
-            <label for="r1" class="btn" id="btn1">
-              <span class="circle"></span>
-            </label>
-            <label for="r2" class="btn" id="btn2">
-              <span class="circle"></span>
-            </label>
-            <label for="r3" class="btn" id="btn3">
-              <span class="circle"></span>
-            </label>
-            <label for="r4" class="btn" id="btn4">
-              <span class="circle"></span>
-            </label>
-            <label for="r5" class="btn" id="btn5">
-              <span class="circle"></span>
-            </label>
-          </div>
+       
     </div>
 </body>
 </html>
