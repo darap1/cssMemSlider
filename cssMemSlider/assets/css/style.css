@@ -4,18 +4,19 @@ body{
     justify-content: center;
 }
 .container{
-    background-color:bisque;
+    background-color:#302f2ec2;
     display: flex;
     flex-direction: column;
     height: 60vh;
     width: 70vh;
     margin-top: 2em;
+    overflow: hidden;
 }
 .wraper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin: 2rem 1rem 1rem 1rem;
 }
 .navigation{
     margin: 1rem;
@@ -25,9 +26,25 @@ body{
 .textSlides{
     margin: 1rem;
 }
+p{
+    color: whitesmoke;
+    text-shadow: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .slides{
-height: 20em;
+    width: 400%;
+    height: 100%;
+    display: flex;
+    
+}
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
 }
 .btn{
     height: 8px;
@@ -59,5 +76,19 @@ input[name="radio"]{
     background-color: #1983e6;
     border: 0.1rem solid #1983e6;
     border-radius: 50%;
-    transition: background-color 1s, border 1s;
+    transition: 1s, border 1s;
+}
+
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+#r2:checked ~ .s1 {
+    margin-left: -25%;
+}
+#r3:checked ~ .s1 {
+    margin-left: 50%;
+}
+#r4:checked ~ .s1 {
+    margin-left: -75%;
 }
